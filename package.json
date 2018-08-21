@@ -1,0 +1,32 @@
+{
+  "name": "crazy-octopus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateAcademy-FE-study/crazy-octopus.git"
+  },
+  "author": "Oks_Ann_Vova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MateAcademy-FE-study/crazy-octopus/issues"
+  },
+  "homepage": "https://github.com/MateAcademy-FE-study/crazy-octopus#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp-clean-css": "^3.10.0"
+  }
+}
