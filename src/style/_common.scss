@@ -1,0 +1,94 @@
+body{
+	font-size: 16px;
+}
+  
+//Шрифты
+
+@mixin robbol {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+@mixin roblight {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+@mixin robreg {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+@mixin robmed {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+@mixin robthin {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+@mixin robblack {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+}
+
+@mixin opesreg {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+@mixin opsbold {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+
+//Цвета
+
+//основной оранжевый
+$orange: #ffc038;
+//оранжевый для features hover
+$lightorange: #fbc73a;
+//красный для packages
+$red: #f26c4f;
+//серый для кнопок, h2 и навигации
+$btngrey: #464646;
+//основной серый для bg и текста
+$maingrey:#363636;
+//текст в features
+$textgrey:#636363;
+$black: #252525;
+$lightgrey: #aab2bd;
+$orangebtntext: #3a3a3a;
+
+//Размеры
+//12px
+$mini: 0.75rem;
+//14px
+$small: 0.875rem;
+//16px
+$medium: 1rem;
+//26px
+$big: 1.625rem;
+
+.header,
+.welcome,
+.services,
+.process,
+.feautures,
+.packages,
+.history,
+.projects,
+.team,
+.support,
+.hire,
+.footer {
+	width: 100%;
+}
+
+.content_wrapper {
+	max-width: 1004px;
+	margin: 0 auto;
+}
