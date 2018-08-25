@@ -50,7 +50,7 @@ gulp.task('nunjucks', function() {
   return gulp.src(path.src.html)
   // Renders template with nunjucks
   .pipe(nunjucksRender({
-      path: ['app/templates']
+      path: ['src/templates']
     }))
   // output files in app folder
   .pipe(gulp.dest(path.build.html));
