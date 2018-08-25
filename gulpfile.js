@@ -32,14 +32,14 @@ var path = {
         css: 'src/style/*.css',
         img: 'src/images/*.*',
         fonts: 'src/fonts/*.*'
-    },
-    clean: './build'
+    }
+
+    // clean: './build'
 };
 
 
 gulp.task('scripts', function () {
     gulp.src(path.src.js)
-        .pipe(rigger())
         .pipe(uglify())
         .pipe(gulp.dest(path.build.js));
 });
@@ -102,7 +102,7 @@ gulp.task('clean', function () {
     return del.sync(path.clean);
 });
 
-gulp.task('build', ['clean', 'scripts', 'nunjucks', 'styles', 'css', 'fonts', 'images']);
+gulp.task('build', ['scripts', 'nunjucks', 'styles', 'css', 'fonts', 'images']);
 
 gulp.task('watch', function () {
     gulp.watch(path.watch.style, ['styles']);
