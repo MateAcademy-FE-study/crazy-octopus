@@ -5,9 +5,9 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     cssmin = require('gulp-clean-css'),
     del = require('del'),
-    rigger = require('gulp-rigger'),
     uglify = require('gulp-uglify'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    nunjucksRender = require('gulp-nunjucks-render');
 
 var path = {
     build: {
@@ -36,17 +36,24 @@ var path = {
     clean: './build'
 };
 
-gulp.task('html', function () {
-    gulp.src(path.src.html)
-        .pipe(rigger())
-        .pipe(gulp.dest(path.build.html));
-});
 
 gulp.task('scripts', function () {
     gulp.src(path.src.js)
         .pipe(rigger())
         .pipe(uglify())
         .pipe(gulp.dest(path.build.js));
+});
+
+
+gulp.task('nunjucks', function() {
+  // Gets .html and .nunjucks files in pages
+  return gulp.src(path.src.html)
+  // Renders template with nunjucks
+  .pipe(nunjucksRender({
+      path: ['app/templates']
+    }))
+  // output files in app folder
+  .pipe(gulp.dest(path.build.html));
 });
 
 gulp.task('styles', function () {
@@ -95,12 +102,12 @@ gulp.task('clean', function () {
     return del.sync(path.clean);
 });
 
-gulp.task('build', ['clean', 'html', 'scripts', 'styles', 'css', 'fonts', 'images']);
+gulp.task('build', ['clean', 'scripts', 'nunjucks', 'styles', 'css', 'fonts', 'images']);
 
 gulp.task('watch', function () {
     gulp.watch(path.watch.style, ['styles']);
     gulp.watch(path.watch.style, ['css']);
-    gulp.watch(path.watch.html, ['html']);
+    gulp.watch(path.watch.html, ['nunjucks']);
     gulp.watch(path.watch.img, ['images']);
     gulp.watch(path.watch.js, ['scripts']);
 });
