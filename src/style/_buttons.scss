@@ -1,0 +1,55 @@
+.btn {
+	display: block;
+	@include robbol;
+	border-radius: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	white-space: nowrap;
+	box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+
+	&__welcome {
+		@include robreg;
+		bg-color: $btngrey;
+		line-height: 50px;
+		width: 150px;
+		color: #ffffff;
+		text-transform: capitalize;
+	}
+	
+	&__hire {
+		@include opsbold;
+		line-height: 50px;
+		width: 160px;
+		color: $orangebtntext;
+		background-color: #ffffff;
+	}
+
+	&--grey {
+		background-color: $btngrey;
+		color: #ffffff;
+		font-size: $big;
+		line-height: 55px;
+		&__h2base {
+			width: 330px;
+		}
+		&__h2long {
+			width: 445px;
+		}
+		&__h2history {
+			width: 220px;
+		}
+	}
+	
+	&--orange {
+		@include opsbold;
+		background-color: $orange;
+		color: $orangebtntext;
+		line-height: 50px;
+		font-size: $mini;
+		text-decoration: none;
+		width: 150px;
+		&__long {
+			width: 190px;
+		}
+	}
+}
