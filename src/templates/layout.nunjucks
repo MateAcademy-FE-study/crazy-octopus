@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+ <html lang="en">
+ <head>
 	<meta charset="UTF-8">
-	<title>Boilerplates</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crazy-octopus</title>
+	<meta name="theme-color" content="#ffffff">
+	<meta name="description" content="Hello from Crazy Octopus=)">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+
 <body>
  <h1>This is our site</h1>
 
   {% include "partials/navigation.nunjucks" %}	
-  
 </body>
-</html>
+ </html> 
