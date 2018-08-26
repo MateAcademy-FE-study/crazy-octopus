@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Boilerplate</title>
+	<title>Boilerplates</title>
 </head>
 <body>
- <h1>Extended file</h1>	
+ <h1>This is our site</h1>
+
+  {% include "partials/navigation.nunjucks" %}	
+  
 </body>
 </html>
