@@ -1,2 +1,18 @@
 {% extends "layout.nunjucks" %}
 
+{%block contetn%}
+
+{% include "partials/header" %}
+{% include "partials/welcome" %}
+{% include "partials/services" %}
+{% include "partials/process" %}
+{% include "partials/features" %}
+{% include "partials/packages" %}
+{% include "partials/history" %}
+{% include "partials/projects" %}
+{% include "partials/team" %}
+{% include "partials/support" %}
+{% include "partials/hire" %}
+{% include "partials/footer" %}
+
+{%endblock%}
