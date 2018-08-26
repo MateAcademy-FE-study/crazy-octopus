@@ -24,7 +24,8 @@
     "gulp-nunjucks-render": "^2.2.2",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.1",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "node-sass": "^4.9.3"
   },
   "dependencies": {
     "del": "^3.0.0",
