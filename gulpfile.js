@@ -56,14 +56,14 @@ gulp.task('nunjucks', function() {
 
 
 gulp.task('styles', function () {
-	gulp.src(path.src.style)
-	    .pipe(sourcemaps.init())
-		.pipe(sass())
-	    .pipe(sourcemaps.write(''))
-		.pipe(gulp.dest(path.build.css));
+	  gulp.src(path.src.style)
+	  .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(autoprefixer())
+        .pipe(cssmin())
+         .pipe(sourcemaps.write())
+        .pipe(gulp.dest(path.build.css));
 });
-
-
 
 gulp.task('images', function () {
 	gulp.src(path.src.img)
