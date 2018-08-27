@@ -1,0 +1,12 @@
+header{
+	&--flex{
+	display:flex;
+	justify-content: space-between;
+}
+	
+}
+.logo{
+	text-transform: uppercase;
+	@include robblack;
+	font-size: $big;
+}

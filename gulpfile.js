@@ -59,7 +59,7 @@ gulp.task('styles', function () {
 	gulp.src(path.src.style)
 	    .pipe(sourcemaps.init())
 		.pipe(sass())
-	    .pipe(sourcemaps.write('.'))
+	    .pipe(sourcemaps.write(''))
 		.pipe(gulp.dest(path.build.css));
 });
 
@@ -97,7 +97,7 @@ gulp.task('images', function () {
 		notify: false 
 	});
 }); 
-gulp.task('build', ['scripts', 'nunjucks', 'styles', 'images']);
+gulp.task('build', ['scripts', 'nunjucks', 'styles', 'images', 'browser-sync']);
 
 gulp.task('watch', function () {
 	gulp.watch(path.watch.style, ['styles']);
