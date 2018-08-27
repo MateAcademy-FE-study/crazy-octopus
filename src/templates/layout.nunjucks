@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+ <html lang="en">
+ <head>
 	<meta charset="UTF-8">
-	<title>Boilerplates</title>
-<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crazy octopus</title>
+	<meta name="description" content="CrazyOctopus website">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" src="css/main.css">
 </head>
 <body>
 
   {% include "partials/header.html" %}	
 
   {% include "partials/welcome.html" %}
+	
+	{% include "partials/services.html" %}
+	
+	{% include "partials/process.html" %}
+	
+	{% include "partials/feautures.html" %}
+	
+	{% include "partials/packages.html" %}
+	
+	{% include "partials/history.html" %}
+	
+	{% include "partials/projects.html" %}
+	
+	{% include "partials/team.html" %}
+	
+	{% include "partials/support.html" %}
+	
+	{% include "partials/hire.html" %}
+	
+	{% include "partials/footer.html" %}
   
 </body>
 </html>
