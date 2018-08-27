@@ -4,7 +4,6 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	imagemin = require('gulp-imagemin'),
 	cssmin = require('gulp-clean-css'),
-//	del = require('del'),
 	uglify = require('gulp-uglify'),
 	autoprefixer = require('gulp-autoprefixer'),
 	nunjucksRender = require('gulp-nunjucks-render'),
@@ -18,15 +17,13 @@ var path = {
 		js: 'build/js/',
 		css: 'build/css/',
 		img: 'build/images/',
-		//        fonts: 'build/fonts/'
+
 	},
 	src: {
 		html: 'src/index.html',
 		js: 'src/js/*.js',
 		style: 'src/style/main.scss',
-		//        css: 'src/style/*.css',
 		img: 'src/images/*.*',
-		//        fonts: 'src/fonts/**/*.*'
 	},
 	watch: {
 		html: 'src/**/*.html',
@@ -34,10 +31,8 @@ var path = {
 		style: 'src/style/**/*.scss',
 		css: 'src/style/**/*.css',
 		img: 'src/images/*.*',
-		//        fonts: 'src/fonts/*.*'
 	}
 
-	// clean: './build'
 };
 
 
@@ -48,16 +43,17 @@ gulp.task('scripts', function () {
 });
 
 
-gulp.task('nunjucks', function () {
-	// Gets .html and .nunjucks files in pages
-	return gulp.src(path.src.html)
-		// Renders template with nunjucks
-		.pipe(nunjucksRender({
-			path: ['src/templates']
-		}))
-		// output files in app folder
-		.pipe(gulp.dest(path.build.html));
+gulp.task('nunjucks', function() {
+  // Gets .html and .nunjucks files in pages
+  return gulp.src('src/pages/**/*.+(html|nunjucks)')
+  // Renders template with nunjucks
+  .pipe(nunjucksRender({
+      path: ['src/templates']
+    }))
+  // output files in app folder
+  .pipe(gulp.dest(path.build.html));
 });
+
 
 gulp.task('styles', function () {
 	gulp.src(path.src.style)
@@ -69,11 +65,7 @@ gulp.task('styles', function () {
 		.pipe(gulp.dest(path.build.css));
 });
 
-//gulp.task('css', function () {
-//    gulp.src(path.src.css)
-//        .pipe(cssmin())
-//        .pipe(gulp.dest(path.build.css));
-//});
+
 
 gulp.task('images', function () {
 	gulp.src(path.src.img)
@@ -98,14 +90,7 @@ gulp.task('images', function () {
 		.pipe(gulp.dest(path.build.img));
 });
 
-//gulp.task('fonts', function () {
-//    gulp.src(path.src.fonts)
-//        .pipe(gulp.dest(path.build.fonts))
-//});
 
-//gulp.task('clean', function () {
-//    return del.sync(path.clean);
-//});
  gulp.task('browser-sync', function () { 
 	browserSync({ 
 		server: { 
