@@ -1,4 +1,6 @@
 .welcome {
-	background-color: red;
-	font-size: 40px;
+	background-color: #ffc038;
+	&__header {
+		color: #fff;
+	}
 }
