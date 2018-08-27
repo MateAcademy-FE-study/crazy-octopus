@@ -3,11 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Boilerplates</title>
+
 </head>
 <body>
- <h1>This is our site</h1>
 
   {% include "partials/header.html" %}	
+
+  {% include "partials/welcome.html" %}
   
 </body>
 </html>

@@ -57,11 +57,9 @@ gulp.task('nunjucks', function() {
 
 gulp.task('styles', function () {
 	gulp.src(path.src.style)
-	.pipe(sourcemaps.init())
+	    .pipe(sourcemaps.init())
 		.pipe(sass())
-		.pipe(autoprefixer())
-		.pipe(cssmin())
-	.pipe(sourcemaps.write())
+	    .pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(path.build.css));
 });
 
