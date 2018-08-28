@@ -9,11 +9,19 @@
 
 	&__welcome {
 		@include robreg;
-		bg-color: $btngrey;
-		line-height: 50px;
-		width: 150px;
+		background-color: $btngrey;
+		border: none;
+		border-radius: 2px;
+		padding: 20px 25px;
 		color: #ffffff;
 		text-transform: capitalize;
+		margin-top: 35px;
+	i {
+		transform: rotate(50deg);
+		font-size: 17px;
+		margin-left: 6px;
+	}
+
 	}
 	
 	&__hire {
