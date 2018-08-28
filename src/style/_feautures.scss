@@ -1,0 +1,32 @@
+.features {
+	background: #fff; 
+	padding-top: 136px;
+	&__row {
+		 display: grid;
+		  grid-template-columns: 1fr 1fr 1fr;
+		  grid-gap: 30px;
+		  font-size: 14px;
+	}
+	&__box {
+			 padding: 10px 10px 10px 50px;
+			 position: relative;
+			 line-height: 1.5;
+
+			 h3 {
+			 	font-weight: 400;
+			 	font-size: 18px;
+			 }
+		}	
+		&__box::before {
+			content: '\f15c';
+			position: absolute;
+			left: 21px;
+    		top: 15px;
+		}
+      &__active {
+			background: $orange;
+		}
+		&__default {
+			background: white;
+		}
+}
