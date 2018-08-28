@@ -1,6 +1,12 @@
 body{
 	font-size: 16px;
 }
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
   
 //Шрифты
 
@@ -91,5 +97,4 @@ $big: 1.625rem;
 .content_wrapper {
 	max-width: 1004px;
 	margin: 0 auto;
-
 }
