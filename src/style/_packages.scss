@@ -1,70 +1,123 @@
 .packages {
+	padding: 150px 0 170px 0;
 	&--flex {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 	&__content {
-		display: table;
-	}
-	&__price{
-		font-size: 35px;
-		line-height: 120px;
-		vertical-align: bottom;
-		&--small{
-			font-size: $big;
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		margin-top: 150px;
+		&::before {
+			content: " ";
+			width: 1px;
+			position: absolute;
+			background-color: $orange;
+			height: 300px;
+			z-index: 4;
+			left: 33%;
+			top: 50px;
+		}
+		&::after {
+			content: " ";
+			width: 1px;
+			position: absolute;
+			background-color: $orange;
+			height: 300px;
+			z-index: 4;
+			right: 33%;
+			top: 50px;
 		}
 	}
-}
-
-.table {
-	&__row {
-		display: table-row;
+	&__column {
+		flex: 0 1 33%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	&__cell {
-		display: table-cell;
 		@include robmed;
 		font-size: $medium;
 		color: $lightgrey;
-		text-align: center;
-		width: 27vw;
 		border-bottom: 1px solid $orange;
 		line-height: 45px;
+		width: 100%;
+		text-align: center;
+		&--noborder {
+			border-bottom: 0px;
+		}
+		&--big {
+			height: 95px;
+			vertical-align: bottom;		}
+	}
+	&__h3 {
+		@include robreg;
+		font-size: 22px;
+		line-height: 100px;
 		&--red {
 			color: $red;
 		}
 		&--orange {
 			color: $orange;
 		}
-		&--noborder{
-			border-bottom: 0;
+	}
+	&__price {
+		font-size: 35px;
+		line-height: 120px;
+		&--small {
+			font-size: $big;
 		}
 	}
-	&__h3 {
-		@include robreg;
-		font-size: 22px;
+	&__btn{
+		display: inline;
+		padding: 15px 50px;
+		color: #ffffff;
+		width:auto;
+		&--grey{
+			background-color: $lightgrey;
+		}
+		&--red{
+			background-color: $red;
+		}
+		&--orange{
+			background-color: $orange;
+		}
 	}
 }
-.packages__content{
-	position:relative;
-	&::before{
-	content: " ";
-	width:1px;
-	position: absolute;
-	background-color: $orange;
-		height: 320px;
-		z-index: 4;
-		left:33%;
-		top: 20px;
+.price__slash{
+	font-size: 35px;
 }
-	&::after{
-	content: " ";
-	width:1px;
-	position: absolute;
-	background-color: $orange;
-		height: 320px;
-		z-index: 4;
-		right:33%;
-		top: 20px;
+
+.packages__column:hover {
+	& .packages__cell {
+		color: #000000;
+	}
+	& .packages__price{
+		font-size: 68px;
+	}
+	& .price__slash, .package__prise--small{
+		font-size: 20px;
+	}
+	& .packages__btn{
+		padding: 20px 55px;
+		@include opsreg;
+	}
+	& .packages__h3{
+		font-size: $big;
+		transform: translateY(-12px);
+	}
+
 }
+.red{
+	color:$red;
+}
+.orange{
+	color:$orange;
+}
+.grey{
+	color: $lightgrey;
 }
