@@ -23,7 +23,7 @@ var path = {
 		html: 'src/index.html',
 		js: 'src/js/*.js',
 		style: 'src/style/main.scss',
-		img: 'src/images/*.*',
+		img: 'src/images/**/*.*',
 	},
 	watch: {
 		html: 'src/**/*.html',
