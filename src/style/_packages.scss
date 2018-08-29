@@ -1,0 +1,70 @@
+.packages {
+	&--flex {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__content {
+		display: table;
+	}
+	&__price{
+		font-size: 35px;
+		line-height: 120px;
+		vertical-align: bottom;
+		&--small{
+			font-size: $big;
+		}
+	}
+}
+
+.table {
+	&__row {
+		display: table-row;
+	}
+	&__cell {
+		display: table-cell;
+		@include robmed;
+		font-size: $medium;
+		color: $lightgrey;
+		text-align: center;
+		width: 27vw;
+		border-bottom: 1px solid $orange;
+		line-height: 45px;
+		&--red {
+			color: $red;
+		}
+		&--orange {
+			color: $orange;
+		}
+		&--noborder{
+			border-bottom: 0;
+		}
+	}
+	&__h3 {
+		@include robreg;
+		font-size: 22px;
+	}
+}
+.packages__content{
+	position:relative;
+	&::before{
+	content: " ";
+	width:1px;
+	position: absolute;
+	background-color: $orange;
+		height: 320px;
+		z-index: 4;
+		left:33%;
+		top: 20px;
+}
+	&::after{
+	content: " ";
+	width:1px;
+	position: absolute;
+	background-color: $orange;
+		height: 320px;
+		z-index: 4;
+		right:33%;
+		top: 20px;
+}
+}
