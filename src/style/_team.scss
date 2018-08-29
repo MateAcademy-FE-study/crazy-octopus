@@ -1,0 +1,29 @@
+.team{
+	background: $orange;
+	
+   &__container {
+	   	display: flex;
+	   	justify-content: space-between;
+	   	flex-wrap: wrap;
+	   	padding: 61px 0 23px;
+	   	text-align: center;
+
+   }
+   figure img{
+		width: 130px;
+		height: 127px;
+	
+   }
+   figcaption {
+   	    text-transform: upppercase;
+   	    color: #fff;
+   	    p {
+   	    	font-size: 16px;
+   	    }
+   	    p:first-child {
+   	    	font-weight: 600;
+   	    	margin: 16px auto;
+   	    }
+
+   }
+}
