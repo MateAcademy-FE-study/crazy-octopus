@@ -1,6 +1,7 @@
 .features {
 	background: #fff; 
 	padding-top: 136px;
+
 	&__row {
 		 display: grid;
 		  grid-template-columns: 1fr 1fr 1fr;
@@ -30,3 +31,6 @@
 			background: white;
 		}
 }
+.margin-btn {
+		margin: 136px auto;
+	}
