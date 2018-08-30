@@ -31,7 +31,10 @@
 		-ms-grid-columns: (1fr)[2];
 		    grid-template-columns: repeat(2, 1fr);
 		grid-column-gap: 60px;
-		margin-bottom: 210px;
+		margin-bottom: 200px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
 		h3 {
 			font-size: 1.1875rem;
 			text-transform: uppercase;
