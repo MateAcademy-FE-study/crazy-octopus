@@ -1,7 +1,7 @@
 .features {
 	background: #fff; 
 	padding-top: 136px;
-
+    @inlude robreg;
 	&__row {
 		 display: grid;
 		  grid-template-columns: 1fr 1fr 1fr;
@@ -12,6 +12,7 @@
 			 padding: 10px 10px 10px 50px;
 			 position: relative;
 			 line-height: 1.5;
+		
 
 			 h3 {
 			 	font-weight: 400;
@@ -20,20 +21,22 @@
 		}	
 		&__box:hover {
 			background: $orange;
+
+     		 img {
+				filter: invert(1);
+			}
 		}
-		&__box::before {
-			content: '\f15c';
+		&__box img {
+			
 			position: absolute;
-			left: 21px;
-    		top: 15px;
+			left: 14px;
+            top: 12px;
 		}
-  //     &__active {
-		// 	background: $orange;
-		// }
+
 		&__default {
 			background: white;
 		}
-}
-.margin-btn {
-		margin: 136px auto;
 	}
+		.margin-btn {
+				margin: 136px auto;
+			}
