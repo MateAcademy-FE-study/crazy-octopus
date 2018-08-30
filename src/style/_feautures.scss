@@ -18,15 +18,18 @@
 			 	font-size: 18px;
 			 }
 		}	
+		&__box:hover {
+			background: $orange;
+		}
 		&__box::before {
 			content: '\f15c';
 			position: absolute;
 			left: 21px;
     		top: 15px;
 		}
-      &__active {
-			background: $orange;
-		}
+  //     &__active {
+		// 	background: $orange;
+		// }
 		&__default {
 			background: white;
 		}
