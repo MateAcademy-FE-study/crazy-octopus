@@ -7,6 +7,11 @@
 	grid-gap: 40px 60px;
 	font-size: 14px;
 	text-align: center;
+        div {
+        	align-self: end;
+        	justify-self: end;
+        	width: 100%;
+        }
 		.descr {
 		text-transform: uppercase;
 		text-align: center;
