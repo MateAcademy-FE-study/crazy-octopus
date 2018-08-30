@@ -1,6 +1,6 @@
 .team{
 	background: $orange;
-	text-transform: upppercase;
+
    &__container {
 	   	display: flex;
 	   	justify-content: space-between;
@@ -18,7 +18,7 @@
 
    }
    figcaption {
-   	    text-transform: upppercase;
+   	    text-transform: uppercase;
    	    color: #fff;
    	    p {
    	    	font-size: 16px;
