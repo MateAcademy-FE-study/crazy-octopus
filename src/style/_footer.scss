@@ -8,50 +8,60 @@
 		justify-content: space-between;
 	}
 	&__nav {
-		width:100%;
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 	}
-	&__copyright{
+	&__copyright {
 		@include roblight;
-		color:$lightgrey;
+		color: $lightgrey;
 		font-size: $medium;
-		padding-top:27px;
+		padding-top: 27px;
 	}
 }
-.item{
-	&__h3{
-	text-transform: uppercase;
-	@include robmed;
-	color: #e6e9ed;
-	font-size:1.125rem;
+
+.item {
+	&__h3 {
+		text-transform: uppercase;
+		@include robmed;
+		color: #e6e9ed;
+		font-size: 1.125rem;
 	}
-	&__a{
+	&__a {
 		color: $lightgrey;
 		@include roblight;
 		font-size: $medium;
 		list-style-type: none;
 		line-height: 32px;
 	}
-	&__list--padding{
+	&__list--padding {
 		padding: 34px 0 46px 0;
 	}
 }
-.social__buttons{
-	width:40px;
+
+.social__buttons {
+	width: 40px;
 	height: 40px;
 	display: inline-block;
 	background-color: $orange;
 	border-radius: 3px;
-//	position: relative;
+	position: relative;
 }
-//.social__img
-//{width:15px;
-//	position:absolute;
-//	top:50%;
-//	left:50%;
-//	transform: translate(-50%, -50%);
-//	fill: #ffffff;
-//	
-//}
 
+.social__img {
+	color: #ffffff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.social__buttons:hover{
+	background-color: $red;
+	& .social__img{
+	color: #898989;	
+	}
+}
+.item__a:hover{
+	text-decoration: underline $orange;
+}
