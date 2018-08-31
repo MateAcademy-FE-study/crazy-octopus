@@ -18,37 +18,17 @@
 		color: $white;
 		text-transform: capitalize;
 		margin-top: 35px;
-<<<<<<< HEAD
-
-
-
-    
-  
-	i {
-=======
-		position:relative;
-		padding-right: 17px;
-		line-height: $mini;
-	  & i{
-
->>>>>>> 8fbdf37e4fdef48f9a26fb45573cf987e76b5a96
-		transform: rotate(50deg);
-		font-size: 17px;
+		position: relative;
+		line-height: $mystic;
+		i {
+			font-size: 17px;
 			right: 13px;
-			top:50%;
+			top: 50%;
 			transform: translateY(-50%) rotate(50deg);
-		position:absolute;
+			position: absolute;
+		}
 	}
-	}
-<<<<<<< HEAD
 
-
-
-	
-
-
-=======
->>>>>>> 8fbdf37e4fdef48f9a26fb45573cf987e76b5a96
 	&__hire {
 		@include opsbold;
 		font-size: $twenty;
@@ -69,24 +49,20 @@
 			min-width: 330px;
 		}
 		&__h2long {
-<<<<<<< HEAD
-//			margin: 136px auto;
-			min-width: 460px;
-	
-=======
+
 			min-width: 445px;
->>>>>>> 8fbdf37e4fdef48f9a26fb45573cf987e76b5a96
+
 		}
 		&__h2history {
 			min-width: 220px;
 		}
 	}
-	
+
 	&--orange {
 		@include opsbold;
 		background-color: $orange;
 		color: $grey;
-		padding:20px 0;
+		padding: 20px 0;
 		font-size: $mystic;
 		min-width: 150px;
 		line-height: $mini;
