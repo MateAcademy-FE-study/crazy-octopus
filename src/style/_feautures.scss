@@ -1,22 +1,26 @@
 .features {
-	background: #fff; 
+	background: $white; 
 	padding-top: 136px;
     @inlude robreg;
 	&__row {
 		 display: grid;
 		  grid-template-columns: 1fr 1fr 1fr;
 		  grid-gap: 30px;
-		  font-size: 14px;
+		  font-size: $small;
 	}
 	&__box {
 			 padding: 10px 10px 10px 50px;
 			 position: relative;
-			 line-height: 1.5;
+			 line-height: 2;
+		@include roblight;
+		color: $grey;
 			 transition: background-color 1s ease;
+
 
 			 h3 {
 			 	font-weight: 400;
-			 	font-size: 18px;
+			 	font-size: $h3;
+				@include robreg;
 			 }
 		}	
 		&__box:hover {
@@ -34,9 +38,10 @@
 		}
 
 		&__default {
-			background: white;
+			background: $white;
 		}
+}
+.margin__h2 {
+		margin-bottom: 150px;
 	}
-		.margin-btn {
-				margin: 136px auto;
-			}
+

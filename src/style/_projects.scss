@@ -1,3 +1,10 @@
+.projects{
+		padding: 150px 0 170px 0;
+	&__margin{
+		margin-bottom: 135px;
+	}
+}
+
 .projects__row {
 	margin: 0 auto;
 	background: url('../images/project_background.png');
@@ -14,8 +21,8 @@
 		.descr {
 		text-transform: uppercase;
 		text-align: center;
-		font-size: 15px;
-		color: #6a6a6a;
-		font-weight: 600;
+		@include robbol;
+			color: $grey;
+			font-size: $medium;
 	}
 }

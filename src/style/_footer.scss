@@ -1,5 +1,5 @@
 .footer {
-	background-color: $maingrey;
+	background-color: $grey;
 	&__padding {
 		padding: 47px 0 33px 0;
 		display: flex;
@@ -24,7 +24,7 @@
 	&__h3 {
 		text-transform: uppercase;
 		@include robmed;
-		color: #e6e9ed;
+		color: $white;
 		font-size: 1.125rem;
 	}
 	&__a {
@@ -33,6 +33,7 @@
 		font-size: $medium;
 		list-style-type: none;
 		line-height: 32px;
+		display: inline-block;
 		position: relative;
 	}
 	&__list--padding {
@@ -50,7 +51,7 @@
 }
 
 .social__img {
-	color: #ffffff;
+	color: $white;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -60,14 +61,17 @@
 .social__buttons:hover{
 	background-color: $red;
 	& .social__img{
-	color: #898989;	
+	color: $lightgrey;	
 	}
 }
-.item__a:hover .item__a::after{
+.item__a:hover::after{
 	content:" ";
 	width:100%;
 	height: 2px;
-	background-color: $orange;
+	background: $orange;
 	position:absolute;
 	top:2px;
+	left:0;
+	z-index: 5;
+	display: inline-block;
 }
