@@ -1,7 +1,7 @@
 .features {
 	background: $white; 
 	padding-top: 136px;
-
+    @inlude robreg;
 	&__row {
 		 display: grid;
 		  grid-template-columns: 1fr 1fr 1fr;
@@ -14,6 +14,8 @@
 			 line-height: 2;
 		@include roblight;
 		color: $grey;
+			 transition: background-color 1s ease;
+
 
 			 h3 {
 			 	font-weight: 400;
@@ -23,16 +25,18 @@
 		}	
 		&__box:hover {
 			background: $orange;
+             transition: background-color 2s ease;
+     		 img {
+				filter: invert(1);
+			}
 		}
-		&__box::before {
-			content: '\f15c';
+		&__box img {
+			
 			position: absolute;
-			left: 21px;
-    		top: 15px;
+			left: 14px;
+            top: 12px;
 		}
-  //     &__active {
-		// 	background: $orange;
-		// }
+
 		&__default {
 			background: $white;
 		}
@@ -40,3 +44,4 @@
 .margin__h2 {
 		margin-bottom: 150px;
 	}
+
