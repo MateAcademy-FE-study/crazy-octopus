@@ -1,0 +1,10 @@
+.process{
+	padding: 85px 0 110px 0;
+	background: $grad;
+	&__content{
+			background: url("images/process/map.svg") no-repeat 50% 50%;
+			width: 990px;
+			height: 855px;
+		
+	}
+}

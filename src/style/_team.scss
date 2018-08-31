@@ -1,14 +1,29 @@
 .team{
+<<<<<<< HEAD
 	background: $orange;
    
+=======
+	&__margin{
+		margin-bottom: 140px;
+	}
+>>>>>>> 8fbdf37e4fdef48f9a26fb45573cf987e76b5a96
    &__container {
 	   	display: flex;
-	   	justify-content: space-between;
+	   	justify-content: center;
 	   	flex-wrap: wrap;
 	   	padding: 61px 0 23px;
 	   	text-align: center;
+<<<<<<< HEAD
          margin: 130px auto;
+=======
+      background: $orange;
+		  width: 100vw;
+>>>>>>> 8fbdf37e4fdef48f9a26fb45573cf987e76b5a96
    }
+	&__members:not(:last-child){
+		margin-right: 45px;
+	}
+
    figure img{
 		width: 130px;
 		height: 127px;
@@ -19,12 +34,13 @@
    }
    figcaption {
    	    text-transform: uppercase;
-   	    color: #fff;
+   	    color: $white;
    	    p {
-   	    	font-size: 16px;
+   	    	font-size: $medium;
+					@include robthin;
    	    }
    	    p:first-child {
-   	    	font-weight: 600;
+   	    	@include robbol;
    	    	margin: 16px auto;
    	    }
 

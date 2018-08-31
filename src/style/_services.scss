@@ -16,10 +16,6 @@
 	&__title {
 		margin: 130px 0px 160px 0px;
 	}
-	&__btn {
-		display: inline-block;
-		padding: 10px 100px;
-	}
 	.line-send {
 		position: absolute;
 		right: -70px;
@@ -36,15 +32,18 @@
 			margin-bottom: 0px;
 		}
 		h3 {
-			font-size: 1.1875rem;
+			font-size: $h3;
+			color:$darkgrey;
 			text-transform: uppercase;
 			margin-bottom: 25px;
+			@include robbol;
 		}
 		&-text p {
-			color: $maingrey;
+			color: $grey;
 			font-size: $small;
-			line-height: 22.41px;
+			line-height: $big;
 			margin-bottom: 20px;
+			@include roblight;
 		}
 	}
 	&__img {

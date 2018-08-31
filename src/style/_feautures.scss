@@ -1,5 +1,5 @@
 .features {
-	background: #fff; 
+	background: $white; 
 	padding-top: 136px;
     @inlude robreg;
 
@@ -8,18 +8,26 @@
 		 display: grid;
 		  grid-template-columns: 1fr 1fr 1fr;
 		  grid-gap: 30px;
+<<<<<<< HEAD
 		  font-size: 14px;
 		  margin: 130px auto;
+=======
+		  font-size: $small;
+>>>>>>> 8fbdf37e4fdef48f9a26fb45573cf987e76b5a96
 	}
 	&__box {
 			 padding: 10px 10px 10px 50px;
 			 position: relative;
-			 line-height: 1.5;
+			 line-height: 2;
+		@include roblight;
+		color: $grey;
 			 transition: background-color 1s ease;
+
 
 			 h3 {
 			 	font-weight: 400;
-			 	font-size: 18px;
+			 	font-size: $h3;
+				@include robreg;
 			 }
 		}	
 		&__box:hover {
@@ -37,7 +45,15 @@
 		}
 
 		&__default {
-			background: white;
+			background: $white;
 		}
+<<<<<<< HEAD
 	
 				}
+=======
+}
+.margin__h2 {
+		margin-bottom: 150px;
+	}
+
+>>>>>>> 8fbdf37e4fdef48f9a26fb45573cf987e76b5a96

@@ -53,37 +53,57 @@ a{
 
 //Цвета
 
+//жклтый для logo
+$yellow: rgb(255, 242, 0);
 //основной оранжевый
 $orange: #ffc038;
-//оранжевый для features hover
-$lightorange: #fbc73a;
-//красный для packages
+
+//основерй красный
 $red: #f26c4f;
-//серый для кнопок, h2 и навигации
-$btngrey: #464646;
-//основной серый для bg и текста
-$maingrey:#363636;
-//текст в features
-$textgrey:#636363;
-$black: #252525;
-$lightgrey: #aab2bd;
-$orangebtntext: #3a3a3a;
+
+//серый для всего
+$grey: rgb(54, 54, 54);
+
+//светло-серый
+$lightgrey: rgb(165, 165, 165);
+
+//темно-серый для h3
+$darkgrey: rgb(36, 36, 36);
+
+//белый для всего
+$white: rgb(252, 252, 252);
+
+//градиент
+$grad: repeating-linear-gradient(-45deg, #f9f8f8, #f9f8f8 4px, #f0efef 4px, #f0efef 5px) fixed;
+
 
 //Размеры
 //12px
 $mini: 0.75rem;
 //14px
 $small: 0.875rem;
+//мистический line-height
+$mystic: 0.775rem;
 //16px
 $medium: 1rem;
+
+//18px
+$h3: 1.125rem;
+
+//20px
+$twenty: 1.25rem;
+//25px
+
 //26px
 $big: 1.625rem;
 
+//42px
+$max: 2.625rem;
 .header,
 .welcome,
 .services,
 .process,
-.feautures,
+.features,
 .packages,
 .history,
 .projects,
@@ -97,4 +117,11 @@ $big: 1.625rem;
 .content_wrapper {
 	max-width: 1004px;
 	margin: 0 auto;
+}
+
+.flex__col{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }

@@ -14,7 +14,7 @@
 }
 .nav__item{
 	text-decoration: none;
-	color: $btngrey;
+	color: $grey;
 	@include robbol;
 	text-transform: uppercase;
 	font-size: $small;
@@ -37,8 +37,8 @@
 	font-size: $big;
 	&__first{
 		display: inline-block;
-		color: #ffffff;
-		border:3px solid #fff200;
+		color: $white;
+		border:3px solid $yellow;
 		padding: 6px 10px;
 	}
 }
