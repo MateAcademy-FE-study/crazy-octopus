@@ -1,10 +1,5 @@
 .packages {
 	padding: 150px 0 170px 0;
-	&--flex {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
 	&__content {
 		width: 90%;
 		margin: 0 auto;
@@ -35,9 +30,7 @@
 	}
 	&__column {
 		flex: 0 1 33%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		transition: all 10s ease;
 	}
 	&__cell {
 		@include robmed;
@@ -100,7 +93,7 @@
 		font-size: 68px;
 	}
 	& .price__slash, .package__prise--small{
-		font-size: 20px;
+		font-size: $twenty;
 	}
 	& .packages__btn{
 		padding: 20px 55px;
