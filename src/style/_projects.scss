@@ -1,12 +1,11 @@
 .projects{
-		padding: 150px 0 170px 0;
+		padding: 150px;
 	&__margin{
 		margin-bottom: 135px;
 	}
 }
 
 .projects__row {
-	margin: 130px auto;
 	background: url('../images/project_background.png');
     padding: 90px 100px;
 	display: grid;
