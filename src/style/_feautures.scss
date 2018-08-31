@@ -2,11 +2,14 @@
 	background: #fff; 
 	padding-top: 136px;
     @inlude robreg;
-	&__row {
+
+
+    &__row {
 		 display: grid;
 		  grid-template-columns: 1fr 1fr 1fr;
 		  grid-gap: 30px;
 		  font-size: 14px;
+		  margin: 130px auto;
 	}
 	&__box {
 			 padding: 10px 10px 10px 50px;
@@ -36,7 +39,5 @@
 		&__default {
 			background: white;
 		}
-	}
-		.margin-btn {
-				margin: 136px auto;
-			}
+	
+				}

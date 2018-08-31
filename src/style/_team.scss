@@ -1,13 +1,13 @@
 .team{
 	background: $orange;
-
+   
    &__container {
 	   	display: flex;
 	   	justify-content: space-between;
 	   	flex-wrap: wrap;
 	   	padding: 61px 0 23px;
 	   	text-align: center;
-
+         margin: 130px auto;
    }
    figure img{
 		width: 130px;

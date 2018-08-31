@@ -16,6 +16,11 @@
 		color: #ffffff;
 		text-transform: capitalize;
 		margin-top: 35px;
+
+
+
+    
+  
 	i {
 		transform: rotate(50deg);
 		font-size: 17px;
@@ -23,7 +28,12 @@
 	}
 
 	}
+
+
+
 	
+
+
 	&__hire {
 		@include opsbold;
 		padding: 15px 0;
@@ -43,6 +53,7 @@
 		&__h2long {
 //			margin: 136px auto;
 			min-width: 460px;
+	
 		}
 		&__h2history {
 			min-width: 220px;
