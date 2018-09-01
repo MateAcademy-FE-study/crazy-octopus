@@ -1,6 +1,9 @@
 .header {
 	background-color: $orange;
-	padding-top: 77px;
+	padding: 77px 0 0 0;
+//	transition: all 1s;
+//	position:fixed;
+
 	&--flex {
 		display: flex;
 		justify-content: space-between;
@@ -15,6 +18,7 @@
 .nav__item{
 	text-decoration: none;
 	display: inline-block;
+	position: relative;
 	color: $grey;
 	@include robbol;
 	text-transform: uppercase;
@@ -23,6 +27,7 @@
 	padding-left: calc(35px/2);
 	&--right{
 		text-align: center;
+		position: relative;
 	}
 	&--nopadding{
 		padding-right: 0;
@@ -44,4 +49,11 @@
 	}
 }
 
+.header--fix{
+	padding: 15px 0;
+	z-index:10;
+	position: fixed;
+//  transition: .2s;
 
+	
+}
