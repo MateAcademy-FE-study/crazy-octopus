@@ -9,12 +9,26 @@
 		@include robbol;
 		color: $white;
 		font-size: $max;
+    position: relative;
         text-transform: uppercase;
         margin-bottom: 46px;
         font-weight: normal;
 	}
+  &__header::after {
+    content: url('../images/png/arrow-welcome.png');
+    position: absolute;
+    top: 36px;
+    right: -276px;
+  }
+   &__header::before {
+    content: url('../images/png/arrow-small.png');
+    position: absolute;
+    top: 42px;
+    right: -308px;
+  }
+  
 	&__content {
-		max-width: 364px; 
+		max-width: 362px; 
 		p {
 			color: $white;
 			line-height: 1.875;
