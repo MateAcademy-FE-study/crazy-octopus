@@ -17,7 +17,10 @@
         animation: swing 1s ease;
         -webkit-animation-iteration-count: 1;
         animation-iteration-count: 1;
-
+       figcaption {
+       	 letter-spacing: 5px;
+       	 transition: all 1s ease; 
+       }
 	}
 	img:hover {
 		// transform: scale(1.5);

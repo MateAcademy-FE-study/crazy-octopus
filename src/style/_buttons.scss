@@ -61,10 +61,7 @@
 &__welcome:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
 &__welcome:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
 &__welcome:hover {background: rgba(255,255,255,.2);}
-	// &__welcome:hover {
-	// 		    box-shadow: 0 4px rgba(114,95,90,1);
- //                top: 2px;
-	// }
+	
 
 	&__hire {
 		@include opsbold;
