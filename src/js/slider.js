@@ -15,6 +15,12 @@ function showSlides() {
 
    for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
+        if (i === slideIndex) {
+  dots[i].className = "dot active";
+} else {
+  dots[i].className = "dot";
+}
   }
+
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
