@@ -12,11 +12,15 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 40px 60px;
 	text-align: center;
+	align-items: end;
         div {
-        	align-self: end;
-        	justify-self: end;
         	width: 100%;
-        }
+        	img {
+        		margin-bottom: 54px;
+        		align-self: start;
+        	}
+       }
+
 		.descr {
 		text-transform: uppercase;
 		text-align: center;
