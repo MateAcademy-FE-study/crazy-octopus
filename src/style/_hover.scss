@@ -1,136 +1,168 @@
 //подчеркивание
-
-.hov__bottomline:hover::after{
-	content:" ";
-	width:100%;
+.hov__bottomline:hover::after {
+	content: " ";
+	width: 100%;
 	height: 2px;
 	background: $yellow;
-	position:absolute;
-	bottom:2px;
-	left:0;
+	position: absolute;
+	bottom: 2px;
+	left: 0;
 	z-index: 5;
 	display: inline-block;
 }
 
-.hov-logo {
-	 position: relative;
-	  transition: .4s;
+//анимация первой части logo - вторая рамка
+.hov__logo--first {
+	position: relative;
+	transition: .7s;
 }
 
-.hov-logo:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  border: 4px solid rgba(0,0,0,0);
-  transition: .4s;
-}
-.hov-logo:hover:after {
-  border-color: $yellow;
-  width: calc(100% - 10px);
-  height: calc(100% + 10px);
+.hov__logo--first::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	border: 3px solid rgba(0, 0, 0, 0);
+	transition: .4s cubic-bezier(.1, .9, .9, 1.5);
 }
 
-.hov-outline:before, 
+.logo:hover .hov__logo--first::after {
+	border-color: $yellow;
+	width: calc(100% - 14px);
+	height: calc(100% + 14px);
+}
+
+//анимацяи второй части logo - поворот на 90 градусов
+.hov__logo--second {
+	display: inline-block;
+	transition: .5s;
+}
+
+.logo:hover .hov__logo--second {
+	transform: rotate(-90deg) translateY(-20px);
+	transition: .7s;
+
+}
+
+.hov-outline:before,
 .hov-outline:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  box-sizing: border-box;
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	box-sizing: border-box;
 }
+
 .hov-outline:before {
-  bottom: 0;
-  left: 0;
-  border-left: 1px solid white;
-  border-top: 1px solid white;
-  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+	bottom: 0;
+	left: 0;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
 }
+
 .hov-outline:after {
-  top: 0;
-  right: 0;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
-  transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+	top: 0;
+	right: 0;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
 }
+
 .hov-outline:hover:before,
-.hov-outline:hover:after{
-  height: 100%;
-  width: 100%;
-  opacity: 1;
+.hov-outline:hover:after {
+	height: 100%;
+	width: 100%;
+	opacity: 1;
 }
-.hov-outline:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
-.hov-outline:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
-.hov-outline:hover {background: rgba(255,255,255,.2);}
-	
+
+.hov-outline:hover:before {
+	transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+.hov-outline:hover:after {
+	transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+
+.hov-outline:hover {
+	background: rgba(255, 255, 255, .2);
+}
+
 .hov-up:hover {
-  animation: stripes .75s infinite linear;
-  background: linear-gradient(45deg, $orange 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 50%, $orange 50%,     $orange 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1));
-  background-size: 10px 10px;
-  color: #000;
+	animation: stripes .75s infinite linear;
+	background: linear-gradient(45deg, $orange 25%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 50%, $orange 50%, $orange 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1));
+	background-size: 10px 10px;
+	color: #000;
 }
 
 @keyframes stripes {
-  0% {background-position: 0 0;}
-  100% {background-position: 50px 0;}
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 50px 0;
+	}
 }
 
-.hov-right {  
-   position: relative;
-   overflow: hidden;
-   z-index: 5;
-  span, i {
-  	position: relative;
-    z-index: 5;
+.hov-right {
+	position: relative;
+	overflow: hidden;
+	z-index: 5;
+	span,
+	i {
+		position: relative;
+		z-index: 5;
 
-  }
+	}
 }
 
-.hov-right:before, 
+.hov-right:before,
 .hov-right:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
 
 }
-.hov-right:before{
-  transform: translateX(-100%);
-  background: white;
-  transition: transform .3s cubic-bezier(.55,.055,.675,.19);
+
+.hov-right:before {
+	transform: translateX(-100%);
+	background: white;
+	transition: transform .3s cubic-bezier(.55, .055, .675, .19);
 }
+
 .hov-right:after {
-  background: $orange;
-  transform: translateX(100%);
-  transition: transform .3s cubic-bezier(.16,.73,.58,.62) .3s;
+	background: $orange;
+	transform: translateX(100%);
+	transition: transform .3s cubic-bezier(.16, .73, .58, .62) .3s;
 }
+
 .hov-right:hover:before,
-.hov-right:hover:after {transform: translateX(0);
+.hov-right:hover:after {
+	transform: translateX(0);
 }
 
 
 .swing {
-    animation: swing ease-in-out 1s infinite alternate;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+	animation: swing ease-in-out 1s infinite alternate;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 
- 
+
 @keyframes swing {
-    0% { transform: rotate(3deg); }
-    100% { transform: rotate(-3deg); }
+	0% {
+		transform: rotate(3deg);
+	}
+	100% {
+		transform: rotate(-3deg);
+	}
 }
-
-
-
-
-
-
