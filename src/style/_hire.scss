@@ -50,3 +50,21 @@
 //		}
 	}
 }
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 768px) {
+	.hire {
+		padding-top: 0px;
+		&__action {
+			flex-direction: column;
+			text-align: center;
+			padding: 25px 20px;
+			&-text {
+				margin-bottom: 25px;
+			}
+		}
+	}
+}

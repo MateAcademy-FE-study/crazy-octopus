@@ -45,5 +45,39 @@
 			top: 18px;
 			left: 83px;
 		}
+		&-media {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 768px) {
+	.support {
+		padding-bottom: 120px;
+		&__btn {
+			padding: 20px;
+		}
+		&__content {
+			grid-template-columns: repeat(1,1fr);
+			grid-row-gap: 60px;
+		}
+		&__img {
+			grid-row: 1;
+			&-relative, &-absolute {
+				display: none;
+			}
+			&-media {
+				display: block;
+				width: 100%;
+			}
+		}
+		.line-send {
+			display: none;
+		}
+
 	}
 }
