@@ -74,7 +74,7 @@ $darkgrey: rgb(36, 36, 36);
 $white: rgb(252, 252, 252);
 
 //градиент
-$grad: repeating-linear-gradient(-45deg, #f9f8f8, #f9f8f8 4px, #f0efef 4px, #f0efef 5px) fixed;
+$grad: repeating-linear-gradient(-45deg,#f9f8f8,#f0efef 1px,#f0efef .07rem,#f9f8f8 calc(.07rem + 1px),#f9f8f8 .4rem) fixed;
 
 
 //Размеры
@@ -125,6 +125,9 @@ $max: 2.625rem;
 	align-items: center;
 	justify-content: space-between;
 }
+//.svg--grad{
+//	background: url(./images/process/svggrad.svg);
+//}
 //.st0{fill:none;stroke:#373636;stroke-linecap:round;stroke-miterlimit:10;}
 //	.st1{fill:none;stroke:#373636;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:3.5831,3.5831;}
 //	.st2{fill:#564;}
