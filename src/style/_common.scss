@@ -140,3 +140,52 @@ $max: 2.625rem;
 //		right:5px;
 //	}
 //}
+
+.plane{
+	position: relative;
+	&--left::before{
+		content:' ';
+		height: 120px;
+		width:73px;
+		background-image: url('../images/png/plane.png');
+		background-repeat: no-repeat;
+    background-position: center; 
+		position: absolute;
+	left:-75px;
+	top:25px;
+	}
+		&--right::after{
+	  content:' ';
+		height: 120px;
+		width:73px;
+		background-image: url('../images/png/plane.png');
+		background-repeat: no-repeat;
+    background-position: center; 
+		position: absolute;
+	right:-75px;
+	top:25px;
+			transform:scaleX(-1);
+			}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
