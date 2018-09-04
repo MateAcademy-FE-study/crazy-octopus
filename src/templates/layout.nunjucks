@@ -16,11 +16,13 @@
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
   integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
   crossorigin="anonymous">
-  <!-- or -->
+  
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
   integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
   crossorigin="anonymous">
+
+ 
 	<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -52,7 +54,8 @@
 	{% include "partials/hire.html" %}
 	
 	{% include "partials/footer.html" %}
-  <script type="text/javascript" src="js/slider.js"></script>
-   <script type="text/javascript" src="js/changeBackground.js"></script>
+
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/changeBackground.js"></script>
 </body>
 </html>
