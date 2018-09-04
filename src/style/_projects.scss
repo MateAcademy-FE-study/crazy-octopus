@@ -10,7 +10,7 @@
     padding: 90px 100px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 40px 60px;
+	grid-gap: 45px 80px;
 	text-align: center;
 	align-items: end;
         div {
@@ -31,4 +31,27 @@
 			color: $grey;
 			font-size: $medium;
 	}
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.projects__row {
+    grid-template-columns: 1fr 1fr;
+ }
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+ .projects__row {
+    grid-template-columns: 1fr 1fr;
+ }
+
+}
+
+ @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { 
+  .projects__row {
+    grid-template-columns: 1fr 1fr;
+ }
+
 }
