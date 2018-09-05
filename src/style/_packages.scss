@@ -30,7 +30,7 @@
 	}
 	&__column {
 		flex: 0 1 33%;
-		transition: all 10s ease;
+
 	}
 	&__cell {
 		@include robmed;
@@ -40,6 +40,7 @@
 		line-height: 45px;
 		width: 100%;
 		text-align: center;
+				transition: all .5s ease;
 		&--noborder {
 			border-bottom: 0px;
 		}
@@ -51,6 +52,8 @@
 		@include robreg;
 		font-size: 22px;
 		line-height: 100px;
+						transition: all .5s linear;
+
 		&--red {
 			color: $red;
 		}
@@ -61,6 +64,8 @@
 	&__price {
 		font-size: 35px;
 		line-height: 120px;
+						transition: all .5s linear;
+		
 		&--small {
 			font-size: $big;
 		}
@@ -70,6 +75,7 @@
 		padding: 15px 50px;
 		color: #ffffff;
 		width:auto;
+		transition: all .5s ease;
 		&--grey{
 			background-color: $lightgrey;
 		}
@@ -88,20 +94,27 @@
 .packages__column:hover {
 	& .packages__cell {
 		color: #000000;
+						transition: all 1s ease;
+
 	}
 	& .packages__price{
 		font-size: 68px;
+		transition: .5s linear;
 	}
 	& .price__slash, .package__prise--small{
 		font-size: $twenty;
+			transition: .2s;
 	}
 	& .packages__btn{
 		padding: 20px 55px;
 		@include opsreg;
+		transition:  padding .3s linear;
 	}
 	& .packages__h3{
 		font-size: $big;
 		transform: translateY(-12px);
+						transition: all .5s linear;
+
 	}
 
 }

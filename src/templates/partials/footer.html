@@ -38,16 +38,16 @@
 			</div>
 		</div>
 		<div class="footer__social">
-		 <a href="#" class="social__buttons hov-right">
+		 <a href="#" class="social__buttons hov__soc--outline">
 			 <i class="social__img fab fa-facebook-f"></i>
 </a>
-			<a href="#" class="social__buttons hov-right">
+			<a href="#" class="social__buttons hov__soc--outline">
 				<i class="social__img fab fa-twitter"></i>
 </a>
-			<a href="#" class="social__buttons hov-right">
+			<a href="#" class="social__buttons hov__soc--outline">
 			  <i class="social__img fab fa-google-plus-g"></i>
 </a>
-			<a href="#" class="social__buttons hov-right"> 
+			<a href="#" class="social__buttons hov__soc--outline"> 
 			<i class="social__img fab fa-linkedin-in"></i>
 </a>
 		</div>
@@ -72,3 +72,31 @@ if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chr
    alert("Browser is Safari");          
 }
 </script>-->
+	<script>
+		var header = document.getElementById('header');
+		var welcome = document.getElementById('welcome');
+//		var headerBottom = header.getBoundingClientRect().bottom + window.pageYOffset;
+		 window.onscroll = function headerFix() {
+      if (document.getElementById('header').classList.contains('header--fix') && window.pageYOffset < 61 || window.pageYOffset > 8800){
+        header.classList.remove('header--fix');
+				welcome.classList.remove('welcome__header--fix');
+      } else if (window.pageYOffset > 61) {
+        header.classList.add('header--fix');
+			 welcome.classList.add('welcome__header--fix');}
+		 };
+
+
+</script>
+ <script>
+	 var process = document.getElementById(process);
+	 var processBottom = process.getBoundingClientRect().bottom + window.pageYOffset - 25;
+	  window.onscroll = function planeFly(){
+			if ( window.pageYOffset < processBottom){
+        process.classList.add('plane');
+				process.classList.add('plane--left');
+      } 
+		 };
+			
+
+
+</script>
