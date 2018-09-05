@@ -7,9 +7,37 @@
 			height: 855px;
 		
 	}
+	&__container {
+		height: 865px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding-top: 165px;
+	}
 	&__map {
+		width: 100%;
+		position: absolute;
 		img {
 			width: 100%;
 		}
+	}
+	&__row {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	&__line1 {
+		position: relative;
+		bottom: 70px;
+	}
+	&__line2 {
+		position: relative;
+		bottom: 13px;
+	}
+	&__line3 {
+		position: relative;
+		bottom: 85px;
 	}
 }
