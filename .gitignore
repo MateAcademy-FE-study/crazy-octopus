@@ -28,6 +28,5 @@ nbproject
 .tmp
 _tmp
 node_modules/
-bower_componentsnode_modules/
 package-lock.json
 build/
