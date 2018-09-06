@@ -2,6 +2,11 @@
 	padding-top: 75px;
 	padding-bottom: 56px;
 	background-color: $orange;
+	&--flex{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 	.welcome--center {
 		align-items: center;
 	}
@@ -99,7 +104,7 @@
    .welcome--center {
     text-align: center;
    }
-   .header--flex {
+   .welcome--flex {
        flex-direction: column; 
      }
      .welcome__content  {
@@ -123,7 +128,7 @@
    .welcome--center {
     text-align: center;
    }
-     .header--flex {
+     .welcome--flex {
        flex-direction: column; 
      }
      .welcome__content  {
@@ -150,7 +155,7 @@
 
 
    }
-   .header--flex {
+   .welcome--flex {
        flex-direction: column; 
      }
      .welcome__content {
