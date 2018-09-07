@@ -22,12 +22,15 @@
   integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
   crossorigin="anonymous">
 
-   <script type="text/javascript" src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
 
+
+   <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+ -->
 	<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+
 
 </head>
 <body>
@@ -55,11 +58,15 @@
 	{% include "partials/hire.html" %}
 	
 	{% include "partials/footer.html" %}
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+
+
      <script type="text/javascript">
      	 var bLazy = new Blazy({
         // Options
     });
      </script>
+     
     <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript" src="js/changeBackground.js"></script>
 </body>
