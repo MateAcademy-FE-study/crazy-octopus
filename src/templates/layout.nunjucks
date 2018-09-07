@@ -60,7 +60,7 @@
 	{% include "partials/footer.html" %}
      <script type="text/javascript" src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
 
-
+<script type="text/javascript" src="js/animate.js"> </script>
      <script type="text/javascript">
      	 var bLazy = new Blazy({
         // Options
