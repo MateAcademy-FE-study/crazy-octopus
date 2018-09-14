@@ -1,4 +1,10 @@
 .process{
+	.pc-show {
+		display: block;
+	}
+	.mobile-show {
+		display: none;
+	}
 	padding: 85px 0 110px 0;
 	background: $grad;
 	&__content{
@@ -30,12 +36,13 @@
 		align-items: center;
 		justify-content: center;
 		margin-bottom: 70px;
-		&:nth-child(4) {
+		&:nth-child(3) {
 			left: 50px;
 		}
 		&:last-child {
 			width: 100%;
 			position: relative;
+			right: 5px;
 			justify-content: center;
 			margin-bottom: 0px;
 		}
@@ -43,9 +50,9 @@
 	}
 	&__contactus {
 		position: absolute;
-		right: -12px;
+		right: -10px;
 		bottom: -10px;
-		transform: translate(-100%, 50%);
+		transform: translate(0%, 50%);
 	}
 	&__work {
 		position: relative;
@@ -181,4 +188,19 @@
 @keyframes start-svg {
     0%   {opacity: 0;}
     100% {opacity: 1;}
+}
+
+@media (max-width: 576px) {
+	.process__map {
+		display: none;
+	}
+	.pc-show {
+		display: none !important;
+	}
+	.mobile-show {
+		display: block !important;
+		img {
+			width: 100%;
+		}
+	}	
 }
