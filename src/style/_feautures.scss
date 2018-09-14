@@ -52,6 +52,18 @@
     width: 80%;
   }
 
+	.features__box:hover .vis{
+		display: block;
+	}
+	.vis{
+		display: none;
+	}
+	.plane--right::after{
+		display: none;
+	}
+	.plane--left::before{
+		display: none;
+	}
 
 
 }
@@ -59,14 +71,10 @@
  .features__row {
     grid-template-columns: 1fr 1fr; 
   }
-
-
 }
 
  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { 
   .features__row {
     grid-template-columns: 1fr 1fr; 
   }
-
-
 }

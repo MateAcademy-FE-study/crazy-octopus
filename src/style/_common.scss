@@ -125,21 +125,9 @@ $max: 2.625rem;
 	align-items: center;
 	justify-content: space-between;
 }
-//.svg--grad{
-//	background: url(./images/process/svggrad.svg);
-//}
-//.st0{fill:none;stroke:#373636;stroke-linecap:round;stroke-miterlimit:10;}
-//	.st1{fill:none;stroke:#373636;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:3.5831,3.5831;}
-//	.st2{fill:#564;}
-//.plane--left{
-//	position: relative;
-//	&::before{
-//		content:("<svg><path class="st1" d="M48.9,1.9C27.8,6.2-44.8,26.3,43.8,90"/></svg>");
-//		z-index: 8;
-//		top: 10px;
-//		right:5px;
-//	}
-//}
+.svg--grad{
+	background: url(../images/svggrad.svg)!important;
+}
 
 .plane{
 	position: relative;
@@ -174,25 +162,3 @@ $max: 2.625rem;
 .visible{
      opacity:1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

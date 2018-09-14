@@ -8,6 +8,7 @@
 	&--left {
 		width: 50%;
 		background-color: $white;
+		height:auto;
 	}
 	&__img {
 		width: 100%;
@@ -27,4 +28,20 @@
 		color: $grey;
 
 	}
+}
+
+@media (max-width: 960px) {
+	.history--left{
+		display: none;
+	}
+	.history__cont{
+		width:100%;
+		align-items: center;
+	& h2{
+		margin-bottom: 25px;
+	}
+		& p{
+			margin-bottom: 25px;
+		}
+}
 }

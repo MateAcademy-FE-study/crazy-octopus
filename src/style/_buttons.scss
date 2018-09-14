@@ -53,6 +53,7 @@
 		&__h2long {
 
 			min-width: 445px;
+			
 
 		}
 		&__h2history {
@@ -72,4 +73,13 @@
 			min-width: 190px;
 		}
 	}
+}
+@media (max-width:445px){
+	.btn--grey__h2long{
+		white-space: normal;
+		padding-left: 10px;
+		padding-right: 10px;
+		line-height: normal;
+	}
+	
 }
